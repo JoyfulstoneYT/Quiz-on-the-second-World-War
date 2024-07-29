@@ -1,0 +1,33 @@
+import random
+
+questions = [
+    ("(If your going to put the Soviet Union as an answer, just type Soviet Union.) Which country did Germany invade which began World War II in 1939?", "Poland"),
+    ("What year did World War II begin?", "1939"),
+    ("Who invaded Poland with Germany?", "Soviet Union"),
+    ("What year did the Soviet Union Invade Germany in World War II?", "1945"),
+    ("When did Japan get nuked?", "1945"),
+    ("What was the full name of the ruler of Germany during World War II?", "Adolf Hitler"),
+    ("What year was it when Adolf Hitler killed himself?", "1945"),
+    ("Which continent is Germany in?", "Europe"),
+    ("What is the capital of Germany?", "Berlin"),
+    ("What was the full name of the ruler of the Soviet Union during World War II?", "Joseph Stalin"),
+    ("When did Joseph Stalin die?", "1953"),
+    ("In the axis powers, there were three nations who joined. Two of them were Germany and Italy, what was the third nation to join?", "Japan"),
+    ("In the Allies, there were two nations in asia who joined, one of them was the Soviet Union, which nation was the other asian ally?", "China"),
+    ("In the Allies, there were two nations in europe, which one did Germany take over?", "France"),
+    ("Write what word would be in the empty space: During World War II, there was a nation in Europe who joined the Allies. The nation was known as the United _______", "Kingdom"),
+    ("Write what word would be in the empty space: USSR stands for the Union of Soviet Socialst _________", "Republics"),
+    ("Where did Japan attack causing the United States to retaliate by sending nukes? Hint: It is a harbor in hawaii.", "Pearl Harbor"),
+]
+
+def ask_question(question, answer):
+   
+    user_answer = input(question + " ")
+
+    if user_answer.lower() == answer.lower():
+        print("Correct!")
+    else:
+        print("Incorrect. The correct answer is", answer)
+
+for question, answer in questions:
+    ask_question(question, answer)
